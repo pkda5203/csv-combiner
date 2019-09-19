@@ -1,3 +1,12 @@
+'''
+ PMG Developer interview Assignment
+ unit test: csv-combiner using python 3.7
+
+
+ @author Prabesh Khadka
+
+ '''
+
 import combiner
 import io
 import unittest.mock
@@ -8,7 +17,6 @@ class test_csv_combiner(unittest.TestCase):
         file1 = combiner.Combiner('./hello.csv')
         file2 = combiner.Combiner('')
         self.assertIsInstance(file2.get_file_name(),str)
-        self.assertEqual(file2.get_file_name(),'csv-combiner')
         self.assertEqual(file1.get_file_name(), 'hello.csv')
         self.assertIsInstance(file1.get_file_name(), str)
 
