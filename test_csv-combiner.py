@@ -2,7 +2,7 @@ import combiner
 import io
 import unittest.mock
 
-class TestOldPython(unittest.TestCase):
+class test_csv_combiner(unittest.TestCase):
 
     def test_get_file_name(self):
         file1 = combiner.Combiner('./hello.csv')
